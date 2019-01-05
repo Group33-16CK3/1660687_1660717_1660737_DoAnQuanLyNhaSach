@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\KhachHangBUS.cs" />
+    <Compile Include="BUS\PhieuThuBUS.cs" />
     <Compile Include="DAO\BaoCaoCongNoDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\KhanhHangDAO.cs" />
