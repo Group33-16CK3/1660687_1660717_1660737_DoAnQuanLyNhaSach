@@ -10,7 +10,7 @@ namespace DoAnQuanLyNhaSach.DTO
     {
         private string _MaKhachHang;
         private string _HoTenKhachHang;
-        private int _DienThoai;
+        private string _DienThoai;
         private string _DiaChi;
         private string _Email;
         private string _MaHoaDon;
@@ -42,7 +42,7 @@ namespace DoAnQuanLyNhaSach.DTO
             }
         }
 
-        public int DienThoai
+        public string DienThoai
         {
             get
             {

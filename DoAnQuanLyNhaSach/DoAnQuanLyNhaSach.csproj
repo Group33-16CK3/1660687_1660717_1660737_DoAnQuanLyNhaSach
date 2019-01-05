@@ -47,8 +47,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\KhachHangBUS.cs" />
+    <Compile Include="DAO\BaoCaoCongNoDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\KhanhHangDAO.cs" />
+    <Compile Include="DAO\PhieuThuDAO.cs" />
+    <Compile Include="GUI\BaoCaoCongNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BaoCaoCongNo.Designer.cs">
+      <DependentUpon>BaoCaoCongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BaoCaoTon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BaoCaoTon.Designer.cs">
+      <DependentUpon>BaoCaoTon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DanhSachKhanhHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhSachKhanhHang.Designer.cs">
+      <DependentUpon>DanhSachKhanhHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PhieuThuTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PhieuThuTien.Designer.cs">
+      <DependentUpon>PhieuThuTien.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhaSach.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -75,6 +102,18 @@
     <None Include="NhaSach.dbml.layout">
       <DependentUpon>NhaSach.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="GUI\BaoCaoCongNo.resx">
+      <DependentUpon>BaoCaoCongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BaoCaoTon.resx">
+      <DependentUpon>BaoCaoTon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DanhSachKhanhHang.resx">
+      <DependentUpon>DanhSachKhanhHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhieuThuTien.resx">
+      <DependentUpon>PhieuThuTien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -103,8 +142,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BUS\" />
-    <Folder Include="GUI\" />
+    <Folder Include="HeThongBaoCao\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
