@@ -50,5 +50,25 @@ namespace DoAnQuanLyNhaSach.DAO
             }
             return dt;
         }
+        public DataTable SlectSoLuongTon(string masach)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+
+                string sql = "select * from SACH where MaSach=" + masach + "";
+                kn.Connect();
+                dt = kn.Select(CommandType.Text, sql, new SqlParameter { ParameterName = "MaSach", Value = masach });
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                kn.Disconnect();
+            }
+            return dt;
+        }
     }
 }

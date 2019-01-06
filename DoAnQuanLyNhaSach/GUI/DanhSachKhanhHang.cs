@@ -18,6 +18,7 @@ namespace DoAnQuanLyNhaSach.GUI
         KhanhHangDAO khDAO = new KhanhHangDAO();
         KhachHangDTO khDTO = new KhachHangDTO();
         PhieuThuTien pttGUI = new PhieuThuTien();
+        HoaDonBanSach hdbsGUI = new HoaDonBanSach();
         public DanhSachKhanhHang()
         {
             InitializeComponent();
@@ -125,7 +126,7 @@ namespace DoAnQuanLyNhaSach.GUI
             if (dskhachhang.SelectedRows.Count > 0)
             {
                 pttGUI.makh = dskhachhang.SelectedRows[0].Cells[0].Value.ToString();
-                //frmhoadonbansach.makh = dskhachhang.SelectedRows[0].Cells[0].Value.ToString();
+                hdbsGUI.makh = dskhachhang.SelectedRows[0].Cells[0].Value.ToString();
             }
             this.Close();
         }

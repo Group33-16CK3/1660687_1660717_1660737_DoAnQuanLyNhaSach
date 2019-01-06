@@ -72,7 +72,7 @@ namespace DoAnQuanLyNhaSach.DAO
             }
             return dt;
         }
-        public DataTable SelectAllSach(SachDTO s)
+        public DataTable SelectAllSach()
         {
             DataTable dt = new DataTable();
             try
@@ -199,7 +199,7 @@ namespace DoAnQuanLyNhaSach.DAO
                 return s;
             }
         }
-        public SachDTO SelectSachTheoMa(int ma)
+        public SachDTO SelectSachTheoMa(string ma)
         {
             DataTable dt = new DataTable();
             string sql = "select * from SACH where MaSach=" + ma + "";
