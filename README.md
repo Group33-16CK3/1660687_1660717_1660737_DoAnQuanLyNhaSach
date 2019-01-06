@@ -8,11 +8,11 @@
 
   Họ và Tên        | MSSV    | Lớp    | Công Việc | Đóng góp(%)
   
-  Trầm Lê Anh Tuấn | 1660687 | 16CK3  | Lập Báo Cáo , Thiết kế xữ lý các Form: DanhSachKhachHang,PhieuThu,QuanLyKhachHang,..          | 100%
+  Trầm Lê Anh Tuấn | 1660687 | 16CK3  | Lập Báo Cáo , Thiết kế xữ lý các Form: DanhSachKhachHang,PhieuThu,QuanLyKhachHang,HoaDonBanSach,PhieuNhapSach,DanhSachSach,          | 100%
   
-  Bùi Khánh Việt   | 1660717 | 16CK3  |    Thiêt kê xữ lý các form: Form1, Login       | 60%
+  Bùi Khánh Việt   | 1660717 | 16CK3  |    Thiêt kê xữ lý các form: Form1, Login ,QuanLyTheLoai      | 60%
   
-  Lê Đình Ca Vũ    | 1660737 | 16CK3  |Thiết kế cơ sơ dư liệu, thiết kế xư li các Form:    BaoCaoCongNo,BaoCaoTon,QuanLySach       | 60%
+  Lê Đình Ca Vũ    | 1660737 | 16CK3  |Thiết kế cơ sơ dư liệu, thiết kế xư li các Form:    BaoCaoCongNo,BaoCaoTon,QuanLySach,ThongTin,ThayDoiQuyDinh,InPhieuThu       | 60%
   
 -Link Git: https://github.com/Group33-16CK3/1660687_1660717_1660737_DoAnQuanLyNhaSach
 
