@@ -153,7 +153,24 @@ namespace DoAnQuanLyNhaSach.DAO
                     new SqlParameter { ParameterName = "HoTenKhachHang", Value = kh.HoTenKhachHang },
                     new SqlParameter { ParameterName = "DienThoai", Value = kh.DienThoai },
                     new SqlParameter { ParameterName = "DiaChi", Value = kh.DiaChi },
-                    new SqlParameter { ParameterName = "Email", Value = kh.Email },
+                    new SqlParameter { ParameterName = "Email", Value = kh.Email });
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                kn.Disconnect();
+            }
+        }
+        public void UpdateTienNoKH(KhachHangDTO kh)
+        {
+            try
+            {
+                string sql = "Update  KHACHHANG set TienNo=('" + kh.TienNo + "') where MaKhachHang=" + kh.MaKhachHang + "";
+                kn.Connect();
+                kn.ExecuteNonQuery(CommandType.Text, sql, new SqlParameter { ParameterName = "MaKhachHang", Value = kh.MaKhachHang },
                     new SqlParameter { ParameterName = "TienNo", Value = kh.TienNo });
             }
             catch (SqlException ex)

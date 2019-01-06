@@ -10,6 +10,7 @@ namespace DoAnQuanLyNhaSach.DTO
     {
         private string _UID;
         private string _Password;
+        private string _PhanQuyen;
 
         public string UID
         {
@@ -34,6 +35,19 @@ namespace DoAnQuanLyNhaSach.DTO
             set
             {
                 _Password = value;
+            }
+        }
+
+        public string PhanQuyen
+        {
+            get
+            {
+                return _PhanQuyen;
+            }
+
+            set
+            {
+                _PhanQuyen = value;
             }
         }
     }

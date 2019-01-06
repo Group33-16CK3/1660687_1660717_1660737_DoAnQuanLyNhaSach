@@ -48,11 +48,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\KhachHangBUS.cs" />
+    <Compile Include="BUS\PhieuNhapBUS.cs" />
     <Compile Include="BUS\PhieuThuBUS.cs" />
     <Compile Include="DAO\BaoCaoCongNoDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\KhanhHangDAO.cs" />
+    <Compile Include="DAO\NguoiDungDAO.cs" />
+    <Compile Include="DAO\PhieuNhapDAO.cs" />
     <Compile Include="DAO\PhieuThuDAO.cs" />
+    <Compile Include="DAO\ThamSoDAO.cs" />
     <Compile Include="GUI\BaoCaoCongNo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +75,71 @@
     <Compile Include="GUI\DanhSachKhanhHang.Designer.cs">
       <DependentUpon>DanhSachKhanhHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DanhSachSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhSachSach.Designer.cs">
+      <DependentUpon>DanhSachSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HoaDonBanSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HoaDonBanSach.Designer.cs">
+      <DependentUpon>HoaDonBanSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InPhieuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InPhieuThu.Designer.cs">
+      <DependentUpon>InPhieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PhieuNhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PhieuNhapSach.Designer.cs">
+      <DependentUpon>PhieuNhapSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\PhieuThuTien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\PhieuThuTien.Designer.cs">
       <DependentUpon>PhieuThuTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyKhachHang.Designer.cs">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLySach.Designer.cs">
+      <DependentUpon>QuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyTheLoai.Designer.cs">
+      <DependentUpon>QuanLyTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThayDoiQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThayDoiQuyDinh.Designer.cs">
+      <DependentUpon>ThayDoiQuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThongTin.Designer.cs">
+      <DependentUpon>ThongTin.cs</DependentUpon>
     </Compile>
     <Compile Include="NhaSach.designer.cs">
       <AutoGen>True</AutoGen>
@@ -103,6 +167,9 @@
     <None Include="NhaSach.dbml.layout">
       <DependentUpon>NhaSach.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\BaoCaoCongNo.resx">
       <DependentUpon>BaoCaoCongNo.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +178,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DanhSachKhanhHang.resx">
       <DependentUpon>DanhSachKhanhHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhieuNhapSach.resx">
+      <DependentUpon>PhieuNhapSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\PhieuThuTien.resx">
       <DependentUpon>PhieuThuTien.cs</DependentUpon>

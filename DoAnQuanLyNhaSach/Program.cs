@@ -17,7 +17,7 @@ namespace DoAnQuanLyNhaSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PhieuThuTien());
+            Application.Run(new Form1());
         }
         // abc
     }

@@ -190,6 +190,7 @@
             this.btnclear.TabIndex = 3;
             this.btnclear.Text = "Xóa trắng";
             this.btnclear.UseVisualStyleBackColor = true;
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // btnprint
             // 
@@ -201,6 +202,7 @@
             this.btnprint.TabIndex = 2;
             this.btnprint.Text = "In Phiếu";
             this.btnprint.UseVisualStyleBackColor = true;
+            this.btnprint.Click += new System.EventHandler(this.btnprint_Click);
             // 
             // btnxoa
             // 
@@ -212,6 +214,7 @@
             this.btnxoa.TabIndex = 2;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btncapnhat
             // 
@@ -223,6 +226,7 @@
             this.btncapnhat.TabIndex = 1;
             this.btncapnhat.Text = "Cập nhật";
             this.btncapnhat.UseVisualStyleBackColor = true;
+            this.btncapnhat.Click += new System.EventHandler(this.btncapnhat_Click);
             // 
             // btnthem
             // 
@@ -234,6 +238,7 @@
             this.btnthem.TabIndex = 0;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // dgvphieuthutien
             // 
@@ -250,6 +255,8 @@
             this.dgvphieuthutien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvphieuthutien.Size = new System.Drawing.Size(532, 150);
             this.dgvphieuthutien.TabIndex = 10;
+            this.dgvphieuthutien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvphieuthutien_CellContentClick);
+            this.dgvphieuthutien.SelectionChanged += new System.EventHandler(this.dgvphieuthutien_SelectionChanged);
             // 
             // colmaphieuthu
             // 
